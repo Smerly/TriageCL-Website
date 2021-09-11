@@ -89,7 +89,7 @@ function Story() {
 							className="triage ml-5"
 							style={{
 								textAlign: 'left',
-								fontSize: '2vw',
+								fontSize: '2.01vw',
 								fontWeight: 600,
 								width: 800,
 							}}
