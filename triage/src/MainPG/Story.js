@@ -8,6 +8,7 @@ function Story() {
 		<div>
 			<div
 				className="column text-center mt-5"
+				style={{ width: '100vw' }}
 				// style={{
 				// 	display: 'flex',
 				// 	flexDirection: 'column',
@@ -50,14 +51,14 @@ function Story() {
 						<div className="mr-5">
 							<header
 								className="roboto"
-								style={{ marginRight: 450, fontSize: 24 }}
+								style={{ marginRight: 450, fontSize: '1.3vw' }}
 							>
 								{' '}
 								Our Founder
 							</header>
 							<h2
 								className="roboto ml-5"
-								style={{ fontWeight: 700, fontSize: 64 }}
+								style={{ fontWeight: 700, fontSize: '3.7vw' }}
 							>
 								{' '}
 								Lawrence Cheung
@@ -69,7 +70,7 @@ function Story() {
 								textAlign: 'left',
 								width: 800,
 								marginTop: 10,
-								fontSize: 24,
+								fontSize: '1.3vw',
 							}}
 						>
 							My passion for maximizing the flavors of coffee started in the
@@ -88,7 +89,7 @@ function Story() {
 							className="triage ml-5"
 							style={{
 								textAlign: 'left',
-								fontSize: 36,
+								fontSize: '2vw',
 								fontWeight: 600,
 								width: 800,
 							}}

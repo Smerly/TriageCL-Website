@@ -1,6 +1,6 @@
 {
-	"homepage": "https://smerly.github.io/TriageCL-Site",
-	"name": "TriageCL-Site",
+	"homepage": "https://smerly.github.io/TriageCL-Website",
+	"name": "TriageCL-Website",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {

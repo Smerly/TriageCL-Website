@@ -11,13 +11,13 @@ function Equipment() {
 					paddingBottom: 400,
 					backgroundImage: `url(${Equipmentbg})`,
 					height: '100vh',
-					width: 1700,
+					width: '100vw',
 					objectFit: 'cover',
 					backgroundRepeat: 'no-repeat',
-					backgroundSize: 'contain',
+					backgroundSize: '100% 100%',
 				}}
 			>
-				<h1 className="titlecustom" style={{ fontSize: 64 }}>
+				<h1 className="titlecustom" style={{ fontSize: '4vw' }}>
 					{' '}
 					Our Equipment{' '}
 				</h1>
@@ -26,7 +26,7 @@ function Equipment() {
 					className="roboto"
 					style={{
 						fontWeight: 100,
-						fontSize: 24,
+						fontSize: '1.4vw',
 						marginTop: -15,
 						marginBottom: 300,
 					}}

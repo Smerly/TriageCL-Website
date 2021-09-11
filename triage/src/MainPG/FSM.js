@@ -8,17 +8,18 @@ function FSM() {
 	return (
 		<div>
 			<div
-				className="beanbg1 column d-flex align-items-center background"
+				className="column d-flex align-items-center"
 				style={{
 					backgroundImage: `url(${bg1})`,
 					height: '100vh',
-					width: 1700,
+					// width: 1700,
+					maxWidth: '100vw',
 					objectFit: 'cover',
 					backgroundRepeat: 'no-repeat',
-					backgroundSize: 'contain',
+					backgroundSize: '100% 100%',
 				}}
 			>
-				<div className="container py-5">
+				<div className="container">
 					<h1
 						className="triage col-md"
 						style={{ color: 'white', fontSize: '4vw' }}
@@ -40,9 +41,12 @@ function FSM() {
 					<NavLink to={`/beans`}>
 						<button
 							className="mt-5 col-md buttoncustom"
-							style={{ borderRadius: 300, width: 250, height: 80 }}
+							style={{ borderRadius: 300, width: '15.375vw', height: '11vh' }}
 						>
-							<h2 className="pt-2 titlecustom"> Shop Here </h2>
+							<h2 className="pt-2 titlecustom" style={{ fontSize: '2vw' }}>
+								{' '}
+								Shop Here{' '}
+							</h2>
 						</button>
 					</NavLink>
 				</div>
