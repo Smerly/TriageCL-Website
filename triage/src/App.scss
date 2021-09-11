@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+
+$maincolor: #e3a7ff;
+$slightwhite: rgb(250, 250, 250);
+$maindarker1: #c587e2;
+$maindarker2: #da9cf7;
+$colors: $maincolor, $slightwhite, $maindarker1, $maindarker2;
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+.navbarcustom {
+	background-color: $slightwhite;
+}
+
+.navbarcustom2 {
+	background-color: $slightwhite;
+	width: 600px;
+	float: right;
+}
+
+@for $i from 1 through 2 {
+	@if $i == 1 {
+		.customlink {
+			font-size: 1.5em;
+			transition: 0.2s;
+			padding: 2px;
+			text-decoration: none;
+			color: nth($colors, 1) !important;
+			font-weight: 150;
+		}
+		.customlink:hover {
+			color: black !important;
+		}
+	} @else if $i == 2 {
+		.customlink#{$i} {
+			font-size: 1.5em;
+			transition: 0.2s;
+			padding: 2px;
+			text-decoration: none;
+			color: white;
+			font-weight: 150;
+		}
+		.customlink2:hover {
+			color: black !important;
+		}
+	}
+}
+
+@for $i from 1 through 2 {
+	@if $i == 1 {
+		.logolink#{$i} {
+			background-image: url(./images/Triage-Logo.png);
+			height: 83.33px;
+			width: 116.915px;
+			object-fit: cover;
+			background-size: cover;
+		}
+	} @else if $i == 2 {
+		.logolink2 {
+			background-image: url(./images/Triage-Logo-White.png);
+			height: 178.05px;
+			width: 249.81px;
+			object-fit: cover;
+			background-size: cover;
+			margin-left: 120px;
+			margin-top: 10px;
+		}
+	}
+}
+
+.customh1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	font-style: italic;
+	font-size: 64px;
+}
+.roboto {
+	font-family: 'Roboto', sans-serif;
+}
+.triage {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.titlecustom {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-style: none;
+	color: $maincolor;
+}
+
+button {
+	background-color: white;
+	border: none;
+	width: 200px;
+	height: 60px;
+}
+
+.herocustom {
+	width: 100%;
+	height: 1000px;
+}
+
+.buttoncustom {
+	transition: 0.3s;
+}
+
+.buttoncustom:hover {
+	background-color: rgb(243, 243, 243);
+	color: nth($colors, 3);
+}
+
+.buttoncustom2 {
+	transition: 0.3s;
+	color: white;
+	background-color: $maincolor;
+}
+
+.buttoncustom2:hover {
+	background-color: nth($colors, 4);
+	color: rgb(243, 243, 243);
+}
+
+.pcustom {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 18px;
+	margin-top: 150px;
+}
+
+.testo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #b694ff;
+}
+
+.footerp {
+	color: white;
+	font-weight: 300;
+}
+
+.center {
+	margin: auto;
+	width: 50%;
+}
+
+.boxcoffee {
+	margin-top: 100px;
+	display: flex;
+	margin-right: 40px;
+	margin-left: 40px;
+	min-height: 350px;
+	min-width: 300px;
+	border: 1px black solid;
+}
+
+.customlist {
+	font-size: 2vw;
+	text-decoration: none;
+	list-style-type: none;
+}
