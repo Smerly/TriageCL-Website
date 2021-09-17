@@ -9,4 +9,4 @@ Self designed with bootstrap and CSS.
 
 You can add the items in "Merch" into the cart, which you can view in the Navbar to the right.
 
-gh-pages: https://smerly.github.io/TriageCL/#/
+gh-pages: https://smerly.github.io/TriageCL-Website/#/
