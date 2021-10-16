@@ -13,7 +13,7 @@ function FSM() {
 					backgroundImage: `url(${bg1})`,
 					height: '100vh',
 					// width: 1700,
-					maxWidth: '100vw',
+					width: '100vw',
 					objectFit: 'cover',
 					backgroundRepeat: 'no-repeat',
 					backgroundSize: '100% 100%',

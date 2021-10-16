@@ -39,7 +39,8 @@ function Equipment() {
 					className="buttoncustom2 titlecustom mt-5"
 					style={{
 						borderRadius: 300,
-						width: 700,
+						// width: 700,
+						width: '44vw',
 						height: 80,
 					}}
 				>

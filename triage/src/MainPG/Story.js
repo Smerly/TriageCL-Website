@@ -64,26 +64,28 @@ function Story() {
 								Lawrence Cheung
 							</h2>
 						</div>
-						<p
-							className="roboto ml-4"
-							style={{
-								textAlign: 'left',
-								width: 800,
-								marginTop: 10,
-								fontSize: '1.3vw',
-							}}
-						>
-							My passion for maximizing the flavors of coffee started in the
-							heights of San Francisco. For the majority of my adolescence, the
-							complex flavors of coffee intrigued me. Naturally, I seeked out
-							what else was possible to enhance the fruit’s flavors to its max
-							potential. Learning from coffee shop to coffee shop, I improved my
-							intuition and knowledge in both the roasting process of the coffee
-							bean and technique in using the best equipment in transfering the
-							flavors from the raw coffee bean to a caffeinated beverage. I
-							explored the best of the best in all different parts of the world
-							to perfect my coffee.
-						</p>
+						<div className="row text-center">
+							<p
+								className="less320pxw roboto ml-4 column"
+								style={{
+									textAlign: 'left',
+									// width: 800,
+									marginTop: 10,
+									fontSize: 24,
+								}}
+							>
+								My passion for maximizing the flavors of coffee started in the
+								heights of San Francisco. For the majority of my adolescence,
+								the complex flavors of coffee intrigued me. Naturally, I seeked
+								out what else was possible to enhance the fruit’s flavors to its
+								max potential. Learning from coffee shop to coffee shop, I
+								improved my intuition and knowledge in both the roasting process
+								of the coffee bean and technique in using the best equipment in
+								transfering the flavors from the raw coffee bean to a
+								caffeinated beverage. I explored the best of the best in all
+								different parts of the world to perfect my coffee.
+							</p>
+						</div>
 
 						<header
 							className="triage ml-5"

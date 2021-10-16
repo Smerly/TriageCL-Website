@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap");
+body {
+  background-color: white;
+}
+
 html,
 body {
   width: 100%;
@@ -155,6 +159,26 @@ button {
   font-size: 2vw;
   text-decoration: none;
   list-style-type: none;
+}
+
+.less320pxw {
+  width: 800px;
+}
+
+@media only screen and (max-width: 1020px) {
+  .less320pxw {
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .less320pxw {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .less320pxw {
+    width: 100px;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */
