@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/TriageCL-Website/static/css/main.895820ea.chunk.css",
-    "main.js": "/TriageCL-Website/static/js/main.42284a27.chunk.js",
-    "main.js.map": "/TriageCL-Website/static/js/main.42284a27.chunk.js.map",
+    "main.css": "/TriageCL-Website/static/css/main.ce4daffd.chunk.css",
+    "main.js": "/TriageCL-Website/static/js/main.d7692274.chunk.js",
+    "main.js.map": "/TriageCL-Website/static/js/main.d7692274.chunk.js.map",
     "runtime-main.js": "/TriageCL-Website/static/js/runtime-main.d9b967fb.js",
     "runtime-main.js.map": "/TriageCL-Website/static/js/runtime-main.d9b967fb.js.map",
     "static/css/2.150d169a.chunk.css": "/TriageCL-Website/static/css/2.150d169a.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.e5841c37.chunk.js.map": "/TriageCL-Website/static/js/3.e5841c37.chunk.js.map",
     "index.html": "/TriageCL-Website/index.html",
     "static/css/2.150d169a.chunk.css.map": "/TriageCL-Website/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.895820ea.chunk.css.map": "/TriageCL-Website/static/css/main.895820ea.chunk.css.map",
+    "static/css/main.ce4daffd.chunk.css.map": "/TriageCL-Website/static/css/main.ce4daffd.chunk.css.map",
     "static/js/2.1c3b2d74.chunk.js.LICENSE.txt": "/TriageCL-Website/static/js/2.1c3b2d74.chunk.js.LICENSE.txt",
     "static/media/Equipmentbg.b6684172.png": "/TriageCL-Website/static/media/Equipmentbg.b6684172.png",
     "static/media/Founder.8fe3b2d2.jpeg": "/TriageCL-Website/static/media/Founder.8fe3b2d2.jpeg",
@@ -25,7 +25,7 @@
     "static/js/runtime-main.d9b967fb.js",
     "static/css/2.150d169a.chunk.css",
     "static/js/2.1c3b2d74.chunk.js",
-    "static/css/main.895820ea.chunk.css",
-    "static/js/main.42284a27.chunk.js"
+    "static/css/main.ce4daffd.chunk.css",
+    "static/js/main.d7692274.chunk.js"
   ]
 }
