@@ -1,24 +1,13 @@
 import React from 'react';
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import bg1 from '../images/mainpurple.png';
+import bg1 from '../images/diff-beans.png';
 import { NavLink } from 'react-router-dom';
 
 function FSM() {
 	return (
-		<div>
-			<div
-				className="column d-flex align-items-center"
-				style={{
-					backgroundImage: `url(${bg1})`,
-					height: '100vh',
-					// width: 1700,
-					width: '100vw',
-					objectFit: 'cover',
-					backgroundRepeat: 'no-repeat',
-					backgroundSize: '100% 100%',
-				}}
-			>
+		<div className="fsmout">
+			<div className="fsmbg column d-flex align-items-center">
 				<div className="container">
 					<h1
 						className="triage col-md"
@@ -39,10 +28,7 @@ function FSM() {
 						Made Just for You.
 					</h1>{' '}
 					<NavLink to={`/beans`}>
-						<button
-							className="mt-5 col-md buttoncustom"
-							style={{ borderRadius: 300, width: '15.375vw', height: '11vh' }}
-						>
+						<button className="buttoncustom mt-5">
 							<h2 className="pt-2 titlecustom" style={{ fontSize: '2vw' }}>
 								{' '}
 								Shop Here{' '}

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+// import titlemerch from '../images/merchtitle';
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 import { DataContext } from '../CartExtras/Context';
-import merchtitle from '../images/merchtitle.png';
+import titlemerch from '../images/merchtitle.png';
 
 class MerchItems extends Component {
 	static contextType = DataContext;
@@ -11,6 +12,61 @@ class MerchItems extends Component {
 		const { products } = this.context;
 		return (
 			<div>
+				{/* <div className="custom-row">
+					<div style={{ marginTop: 200, marginLeft: 300 }}>
+						<h1
+							className="triage"
+							style={{
+								fontSize: '4vw',
+								color: 'white',
+								fontWeight: 800,
+								marginTop: -15,
+							}}
+						>
+							{' '}
+							Show your
+						</h1>
+						<h1
+							className="triage"
+							style={{
+								fontSize: '4vw',
+								color: 'white',
+								fontWeight: 800,
+								marginTop: -15,
+							}}
+						>
+							{' '}
+							coffee science
+						</h1>
+						<h1
+							className="triage"
+							style={{
+								fontSize: '4vw',
+								color: 'white',
+								fontWeight: 800,
+								marginTop: -15,
+							}}
+						>
+							{' '}
+							love.
+						</h1>
+						<header
+							className="triage"
+							style={{
+								fontWeight: 100,
+								fontSize: '1vw',
+								marginTop: -15,
+								marginBottom: 150,
+							}}
+						>
+							{' '}
+							Buy some of our official Triage merch.
+						</header>
+					</div>
+					<div>
+						<img src={titlemerch} className="img-resp-1" alt="merch mix" />
+					</div>
+				</div> */}
 				{products.map((product) => (
 					<div className="column" key={product._id}>
 						<div

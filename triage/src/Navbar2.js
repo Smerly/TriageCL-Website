@@ -1,76 +1,78 @@
 import React, { Component } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar } from 'react-bootstrap';
 import titlemerch from './images/merchtitle.png';
 import { NavLink } from 'react-router-dom';
 import LoginModal from './LoginModal';
 import { DataContext } from './CartExtras/Context';
 
 class Navbar2 extends Component {
+	constructor() {
+		super();
+		this.state = {
+			showLinks: false,
+		};
+	}
 	static contextType = DataContext;
+
 	render() {
 		const { cart } = this.context;
+
 		return (
 			<div>
 				<section>
-					<div
-						className="column"
-						style={{ backgroundColor: '#E3A7FF', height: 1000 }}
-					>
-						<NavLink
-							to={`/`}
-							className="logolink2 font-weight-bold navbar-brand mb-2"
-						></NavLink>
+					<NavLink
+						to={`/`}
+						className="logolink2 font-weight-bold navbar-brand mb-2"
+					></NavLink>
+					{/* 'navbar navbar-inverse' below */}
 
-						<nav
-							className="navbarcustom2 navbar navbar-inverse navbar-static-top py-4"
-							style={{ borderRadius: 5, width: 1100, paddingLeft: 100 }}
-						>
-							{/* <button
-							className="navbar-toggler"
-							type="button"
-							data-toggle="collapse"
-							data-target="#collapsibleNavbar"
-						>
-							<span className="navbar-toggler-icon"></span>
-						</button> */}
-							{/* <div className="collapse navbar-collapse" id="collapsibleNavbar"> */}
-							<ul className="nav-item"></ul>
+					{/* Button for minimized */}
 
-							<ul className="navbar-nav">
-								<div className="row">
-									<li className="nav-item col-sm mr-4 d-flex align-items-center">
-										<NavLink
-											whileHover={{ color: 'black' }}
-											to={`beans`}
-											className="customlink nav-link mx-4"
-										>
-											Coffee
-										</NavLink>
-									</li>
+					<nav className="drop-down py-4">
+						<button
+							onClick={() => {
+								this.setState({ showLinks: !this.state.showLinks });
+							}}
+						></button>
+					</nav>
+					{/* Second shown */}
 
-									<li className="nav-item col-sm mr-4 d-flex align-items-center">
-										<NavLink
-											whileHover={{ color: 'black' }}
-											to={`/merch`}
-											className="customlink nav-link mx-4"
-										>
-											Merch
-										</NavLink>
-									</li>
+					<ul id={this.state.showLinks ? 'show' : 'hidden'}>
+						<div className="column">
+							<li className="nav-item col-sm mr-4 d-flex align-items-center">
+								<NavLink
+									whileHover={{ color: 'black' }}
+									to={`beans`}
+									className="customlink nav-link mx-4"
+								>
+									Coffee
+								</NavLink>
+							</li>
 
-									<li className="nav-item col-sm mr-4 d-flex align-items-center">
-										<NavLink
-											whileHover={{ color: 'black' }}
-											to={`/location`}
-											className="customlink nav-link mx-4"
-										>
-											Locations
-										</NavLink>
-									</li>
+							<li className="nav-item col-sm mr-4 d-flex align-items-center">
+								<NavLink
+									whileHover={{ color: 'black' }}
+									to={`/merch`}
+									className="customlink nav-link mx-4"
+								>
+									Merch
+								</NavLink>
+							</li>
 
-									<li className="nav-item col-sm mr-4 d-flex align-items-center">
-										{/* <NavLink
+							<li className="nav-item col-sm mr-4 d-flex align-items-center">
+								<NavLink
+									whileHover={{ color: 'black' }}
+									to={`/location`}
+									className="customlink nav-link mx-4"
+								>
+									Locations
+								</NavLink>
+							</li>
+
+							<li className="nav-item col-sm mr-4 d-flex align-items-center">
+								{/* <NavLink
 										whileHover={{ color: 'black' }}
 										to={`/login`}
 										className="customlink nav-link mx-3 mr-5"
@@ -78,86 +80,81 @@ class Navbar2 extends Component {
 										Login
 									</NavLink> */}
 
-										<LoginModal />
-									</li>
+								<LoginModal />
+							</li>
 
-									<li className="nav-item col-sm mr-4 d-flex align-items-center">
-										<NavLink
-											whileHover={{ color: 'black' }}
-											to={`/cart`}
-											className="customlink carticon nav-link mx-3 mr-5"
-										>
-											<span> Cart[{cart.length}]</span>
-										</NavLink>
-									</li>
-								</div>
-							</ul>
-							{/* </div> */}
-						</nav>
-						<div className="row">
-							<div
-								className="col-md"
-								style={{ marginTop: 200, marginLeft: 300 }}
-							>
-								<h1
-									className="triage"
-									style={{
-										fontSize: '4vw',
-										color: 'white',
-										fontWeight: 800,
-										marginTop: -15,
-									}}
+							<li className="nav-item col-sm mr-4 d-flex align-items-center">
+								<NavLink
+									whileHover={{ color: 'black' }}
+									to={`/cart`}
+									className="customlink carticon nav-link mx-3 mr-5"
 								>
-									{' '}
-									Show your
-								</h1>
-								<h1
-									className="triage"
-									style={{
-										fontSize: '4vw',
-										color: 'white',
-										fontWeight: 800,
-										marginTop: -15,
-									}}
-								>
-									{' '}
-									coffee science
-								</h1>
-								<h1
-									className="triage"
-									style={{
-										fontSize: '4vw',
-										color: 'white',
-										fontWeight: 800,
-										marginTop: -15,
-									}}
-								>
-									{' '}
-									love.
-								</h1>
-								<header
-									className="triage"
-									style={{
-										fontWeight: 100,
-										fontSize: '1vw',
-										marginTop: -15,
-										marginBottom: 150,
-									}}
-								>
-									{' '}
-									Buy some of our official Triage merch.
-								</header>
-							</div>
-							<div className="col-md">
-								<img
-									src={titlemerch}
-									className="img-responsive"
-									alt="merch mix"
-									style={{ width: '80%' }}
-								/>
-							</div>
+									<span> Cart[{cart.length}]</span>
+								</NavLink>
+							</li>
 						</div>
-					</div>
+					</ul>
+
+					{/* First Shown */}
+					<nav className="navbarcustom2 py-4">
+						<ul>
+							<div className="row">
+								<li className="nav-item col-sm mr-4 d-flex align-items-center">
+									<NavLink
+										whileHover={{ color: 'black' }}
+										to={`beans`}
+										className="customlink nav-link mx-4"
+									>
+										Coffee
+									</NavLink>
+								</li>
+
+								<li className="nav-item col-sm mr-4 d-flex align-items-center">
+									<NavLink
+										whileHover={{ color: 'black' }}
+										to={`/merch`}
+										className="customlink nav-link mx-4"
+									>
+										Merch
+									</NavLink>
+								</li>
+
+								<li className="nav-item col-sm mr-4 d-flex align-items-center">
+									<NavLink
+										whileHover={{ color: 'black' }}
+										to={`/location`}
+										className="customlink nav-link mx-4"
+									>
+										Locations
+									</NavLink>
+								</li>
+
+								<li className="nav-item col-sm mr-4 d-flex align-items-center">
+									{/* <NavLink
+										whileHover={{ color: 'black' }}
+										to={`/login`}
+										className="customlink nav-link mx-3 mr-5"
+									>
+										Login
+									</NavLink> */}
+
+									<LoginModal />
+								</li>
+
+								<li className="nav-item col-sm mr-4 d-flex align-items-center">
+									<NavLink
+										whileHover={{ color: 'black' }}
+										to={`/cart`}
+										className="customlink carticon nav-link mx-3 mr-5"
+									>
+										<span> Cart[{cart.length}]</span>
+									</NavLink>
+								</li>
+							</div>
+						</ul>
+					</nav>
+
+					{/* </div> */}
 				</section>
 			</div>
 		);
