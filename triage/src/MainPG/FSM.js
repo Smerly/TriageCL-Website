@@ -8,31 +8,30 @@ function FSM() {
 	return (
 		<div className="fsmout">
 			<div className="fsmbg column d-flex align-items-center">
-				<div className="container">
-					<h1
-						className="triage col-md"
-						style={{ color: 'white', fontSize: '4vw' }}
-					>
-						Fresh on Site,
-					</h1>
-					<h1
-						className="triage col-md"
-						style={{ color: 'white', fontSize: '4vw' }}
-					>
-						Scientifically Roasted,
-					</h1>
-					<h1
-						className="triage col-md"
-						style={{ color: 'white', fontSize: '4vw' }}
-					>
-						Made Just for You.
-					</h1>{' '}
+				<div className="fsm container">
+					<div>
+						<h1
+							className="triage col-md"
+							style={{ color: 'white', fontSize: '4vw' }}
+						>
+							Fresh on Site,
+						</h1>
+						<h1
+							className="triage col-md"
+							style={{ color: 'white', fontSize: '4vw' }}
+						>
+							Scientifically Roasted,
+						</h1>
+						<h1
+							className="triage col-md"
+							style={{ color: 'white', fontSize: '4vw' }}
+						>
+							Made Just for You.
+						</h1>{' '}
+					</div>
 					<NavLink to={`/beans`}>
-						<button className="buttoncustom mt-5">
-							<h2 className="pt-2 titlecustom" style={{ fontSize: '2vw' }}>
-								{' '}
-								Shop Here{' '}
-							</h2>
+						<button className="shop-here-main buttoncustom mt-5">
+							<h2 className="shop-here-text pt-2 titlecustom"> Shop Here </h2>
 						</button>
 					</NavLink>
 				</div>

@@ -17,35 +17,18 @@ function Equipment() {
 					backgroundSize: '100% 100%',
 				}}
 			>
-				<h1 className="titlecustom" style={{ fontSize: '4vw' }}>
-					{' '}
-					Our Equipment{' '}
-				</h1>
-
-				<header
-					className="roboto"
-					style={{
-						fontWeight: 100,
-						fontSize: '1.4vw',
-						marginTop: -15,
-						marginBottom: 300,
-					}}
-				>
+				<h1 className="equip-title titlecustom"> Our Equipment</h1>
+				<header className="equip-header roboto">
 					{' '}
 					Make your own Triage at home.
 				</header>
 
-				<button
-					className="buttoncustom2 titlecustom mt-5"
-					style={{
-						borderRadius: 300,
-						// width: 700,
-						width: '44vw',
-						height: 80,
-					}}
-				>
+				<button className="button-equips buttoncustom2 titlecustom mt-5">
 					{' '}
-					<h2 className="pt-2"> Get our recommended equipment </h2>
+					<h2 className="button-equips-text pt-2">
+						{' '}
+						Get our recommended equipment{' '}
+					</h2>
 				</button>
 			</div>
 		</div>

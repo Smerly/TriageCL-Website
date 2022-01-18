@@ -6,18 +6,13 @@ function Skills() {
 	return (
 		<div className="container">
 			<div className="column text-center">
-				<h1 className="titlecustom mb-5" style={{ fontSize: 64 }}>
+				<h1 className="titlecustom" style={{ fontSize: 64 }}>
+					{' '}
 					Improve Your Skills
 				</h1>
-
 				<header
 					className="roboto"
-					style={{
-						fontWeight: 100,
-						fontSize: 24,
-						marginTop: -15,
-						marginBottom: 150,
-					}}
+					style={{ fontWeight: 100, fontSize: 24, marginTop: -15 }}
 				>
 					{' '}
 					Discover and recreate your favorite coffee.
