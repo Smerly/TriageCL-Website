@@ -8,58 +8,14 @@ import { HashRouter as Router } from 'react-router-dom';
 function MerchMain() {
 	return (
 		<Router>
-			<div
-				className="custom-column"
-				style={{ backgroundColor: '#E3A7FF', height: 1000 }}
-			>
+			<div className="custom-column">
 				<Navbar2 />
 				<div className="custom-row">
-					<div style={{ marginTop: 200, marginLeft: 300 }}>
-						<h1
-							className="triage"
-							style={{
-								fontSize: '4vw',
-								color: 'white',
-								fontWeight: 800,
-								marginTop: -15,
-							}}
-						>
-							{' '}
-							Show your
-						</h1>
-						<h1
-							className="triage"
-							style={{
-								fontSize: '4vw',
-								color: 'white',
-								fontWeight: 800,
-								marginTop: -15,
-							}}
-						>
-							{' '}
-							coffee science
-						</h1>
-						<h1
-							className="triage"
-							style={{
-								fontSize: '4vw',
-								color: 'white',
-								fontWeight: 800,
-								marginTop: -15,
-							}}
-						>
-							{' '}
-							love.
-						</h1>
-						<header
-							className="triage"
-							style={{
-								fontWeight: 100,
-								fontSize: '1vw',
-								marginTop: -15,
-								marginBottom: 150,
-							}}
-						>
+					<div className="fsm-text">
+						<h1 className="fsm-text-each triage"> Show your</h1>
+						<h1 className="fsm-text-each triage"> coffee science</h1>
+						<h1 className="fsm-text-each triage"> love.</h1>
+						<header className="fsm-text-header triage">
 							{' '}
 							Buy some of our official Triage merch.
 						</header>

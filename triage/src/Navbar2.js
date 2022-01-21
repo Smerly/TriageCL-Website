@@ -21,17 +21,21 @@ class Navbar2 extends Component {
 
 		return (
 			<div>
-				<section>
-					<NavLink
-						to={`/`}
-						className="logolink2 font-weight-bold navbar-brand mb-2"
-					></NavLink>
+				<section className="navbar-top-row">
+					{/* Logo Home Button */}
+					<div>
+						<NavLink
+							to={`/`}
+							className="logolink2 font-weight-bold navbar-brand mb-2"
+						></NavLink>
+					</div>
 					{/* 'navbar navbar-inverse' below */}
 
 					{/* Button for minimized */}
 
-					<nav className="drop-down py-4">
+					<nav style={{ backgroundColor: 'white' }} className="drop-down py-4">
 						<button
+							className="drop-down-button"
 							onClick={() => {
 								this.setState({ showLinks: !this.state.showLinks });
 							}}
@@ -39,9 +43,19 @@ class Navbar2 extends Component {
 					</nav>
 					{/* Second shown */}
 
-					<ul id={this.state.showLinks ? 'show' : 'hidden'}>
-						<div className="column">
-							<li className="nav-item col-sm mr-4 d-flex align-items-center">
+					<ul
+						style={{
+							position: 'fixed',
+							right: 0,
+							top: 100,
+							width: 200,
+							borderRadius: 10,
+							zIndex: 99,
+						}}
+						id={this.state.showLinks ? 'show' : 'hidden'}
+					>
+						<div style={{ width: 200 }} className="column">
+							<li className="nav-item d-flex align-items-center">
 								<NavLink
 									whileHover={{ color: 'black' }}
 									to={`beans`}
@@ -51,7 +65,7 @@ class Navbar2 extends Component {
 								</NavLink>
 							</li>
 
-							<li className="nav-item col-sm mr-4 d-flex align-items-center">
+							<li className="nav-item d-flex align-items-center">
 								<NavLink
 									whileHover={{ color: 'black' }}
 									to={`/merch`}
@@ -61,7 +75,7 @@ class Navbar2 extends Component {
 								</NavLink>
 							</li>
 
-							<li className="nav-item col-sm mr-4 d-flex align-items-center">
+							<li className="nav-item d-flex align-items-center">
 								<NavLink
 									whileHover={{ color: 'black' }}
 									to={`/location`}
@@ -71,7 +85,7 @@ class Navbar2 extends Component {
 								</NavLink>
 							</li>
 
-							<li className="nav-item col-sm mr-4 d-flex align-items-center">
+							<li className="nav-item d-flex align-items-center">
 								{/* <NavLink
 										whileHover={{ color: 'black' }}
 										to={`/login`}
@@ -83,7 +97,7 @@ class Navbar2 extends Component {
 								<LoginModal />
 							</li>
 
-							<li className="nav-item col-sm mr-4 d-flex align-items-center">
+							<li className="nav-item d-flex align-items-center">
 								<NavLink
 									whileHover={{ color: 'black' }}
 									to={`/cart`}
@@ -96,41 +110,40 @@ class Navbar2 extends Component {
 					</ul>
 
 					{/* First Shown */}
-					<nav className="navbarcustom2 py-4">
-						<ul>
-							<div className="row">
-								<li className="nav-item col-sm mr-4 d-flex align-items-center">
-									<NavLink
-										whileHover={{ color: 'black' }}
-										to={`beans`}
-										className="customlink nav-link mx-4"
-									>
-										Coffee
-									</NavLink>
-								</li>
+					<nav className="navbarcustom2 py-3">
+						<ul className="row">
+							<li className="nav-item col-sm mr-3 d-flex align-items-center">
+								<NavLink
+									whileHover={{ color: 'black' }}
+									to={`beans`}
+									className="customlink nav-link mx-4"
+								>
+									Coffee
+								</NavLink>
+							</li>
 
-								<li className="nav-item col-sm mr-4 d-flex align-items-center">
-									<NavLink
-										whileHover={{ color: 'black' }}
-										to={`/merch`}
-										className="customlink nav-link mx-4"
-									>
-										Merch
-									</NavLink>
-								</li>
+							<li className="nav-item col-sm mr-3 d-flex align-items-center">
+								<NavLink
+									whileHover={{ color: 'black' }}
+									to={`/merch`}
+									className="customlink nav-link mx-4"
+								>
+									Merch
+								</NavLink>
+							</li>
 
-								<li className="nav-item col-sm mr-4 d-flex align-items-center">
-									<NavLink
-										whileHover={{ color: 'black' }}
-										to={`/location`}
-										className="customlink nav-link mx-4"
-									>
-										Locations
-									</NavLink>
-								</li>
+							<li className="nav-item col-sm mr-3 d-flex align-items-center">
+								<NavLink
+									whileHover={{ color: 'black' }}
+									to={`/location`}
+									className="customlink nav-link mx-4"
+								>
+									Locations
+								</NavLink>
+							</li>
 
-								<li className="nav-item col-sm mr-4 d-flex align-items-center">
-									{/* <NavLink
+							<li className="nav-item col-sm mr-3 d-flex align-items-center">
+								{/* <NavLink
 										whileHover={{ color: 'black' }}
 										to={`/login`}
 										className="customlink nav-link mx-3 mr-5"
@@ -138,19 +151,18 @@ class Navbar2 extends Component {
 										Login
 									</NavLink> */}
 
-									<LoginModal />
-								</li>
+								<LoginModal />
+							</li>
 
-								<li className="nav-item col-sm mr-4 d-flex align-items-center">
-									<NavLink
-										whileHover={{ color: 'black' }}
-										to={`/cart`}
-										className="customlink carticon nav-link mx-3 mr-5"
-									>
-										<span> Cart[{cart.length}]</span>
-									</NavLink>
-								</li>
-							</div>
+							<li className="nav-item col-sm mr-3 d-flex align-items-center">
+								<NavLink
+									whileHover={{ color: 'black' }}
+									to={`/cart`}
+									className="customlink carticon nav-link mx-3 mr-3"
+								>
+									<span> Cart[{cart.length}]</span>
+								</NavLink>
+							</li>
 						</ul>
 					</nav>
 

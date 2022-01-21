@@ -22,11 +22,16 @@ body {
 }
 
 .navbarcustom2 {
+	display: flex;
 	background-color: $slightwhite;
 	width: 65vw;
 	float: right;
 	border-radius: 5px;
+	height: 150px;
 	// padding-left: 30px;
+	// justify-self: flex-end;
+	// align-self: flex-end;
+	margin-left: auto;
 }
 
 .fsm {
@@ -34,6 +39,11 @@ body {
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
+}
+
+.fsm-text {
+	margin-top: 200px;
+	margin-left: 300px;
 }
 
 .fsmbg {
@@ -100,16 +110,26 @@ body {
 			background-size: cover;
 			margin-left: 120px;
 			margin-top: 10px;
+			justify-self: flex-start;
 		}
 	}
 }
 
 nav.drop-down {
 	display: none;
-	background-color: $slightwhite;
-	width: 65vw;
+	background-color: $maincolor;
+	// width: 65vw;
+	height: 100px;
 	float: right;
-	border-radius: 5px;
+	position: absolute;
+	right: 0;
+	border-radius: 10px;
+	z-index: 99;
+}
+
+.drop-down-button {
+	background-color: $maincolor;
+	border-radius: 10px;
 }
 
 .customh1 {
@@ -242,6 +262,12 @@ button {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	align-items: center;
+}
+
+.custom-column {
+	background-color: #e3a7ff;
+	height: 1000px;
 }
 
 .row-resp-founder {
@@ -281,31 +307,10 @@ button {
 	margin-bottom: 300px;
 }
 
-@media only screen and (max-width: 1300px) {
-	div.first-shown {
-		display: none;
-	}
-	nav.drop-down {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 150px;
-		padding: 35px;
-	}
-
-	nav.navbarcustom2 {
-		display: none;
-	}
-
-	#show {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		float: right;
-		height: 300px;
-		width: 20%;
-		background-color: $slightwhite;
-	}
+.navbar-top-row {
+	display: flex;
+	// flex-direction: row;
+	// justify-content: flex-end;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -323,6 +328,20 @@ button {
 
 .shop-here-text {
 	font-size: 2vw;
+}
+
+.fsm-text-each {
+	font-size: 4vw;
+	color: white;
+	font-weight: 800;
+	margin-top: -15px;
+}
+
+.fsm-text-header {
+	font-weight: 100;
+	font-size: 1vw;
+	margin-top: -15px;
+	margin-bottom: 150px;
 }
 
 @media only screen and (max-width: 1410px) {
@@ -345,6 +364,47 @@ button {
 	.button-equips {
 		height: 100px;
 	}
+
+	.fsm-text {
+		margin-top: 200px;
+		margin-left: 200px;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	div.first-shown {
+		display: none;
+	}
+	nav.drop-down {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 150px;
+		padding: 35px;
+		background-color: $maincolor;
+	}
+
+	nav.navbarcustom2 {
+		display: none;
+	}
+
+	#show {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		float: right;
+		height: 300px;
+		width: 20%;
+		background-color: $slightwhite;
+	}
+
+	.fsm-text {
+		margin-top: 200px;
+		margin-left: 150px;
+	}
+	.fsm-text-header {
+		font-size: 15px;
+	}
 }
 
 @media only screen and (max-width: 1030px) {
@@ -359,6 +419,39 @@ button {
 
 	.button-equips {
 		height: 150px;
+	}
+	.img-resp-1 {
+		height: 400px;
+	}
+	.fsm-text {
+		margin-top: 200px;
+		margin-left: 100px;
+	}
+	.fsm-text-each {
+		font-size: 40px;
+	}
+	.custom-column {
+		background-color: #e3a7ff;
+		height: 800px;
+	}
+}
+@media only screen and (max-width: 720px) {
+	.fsm-text {
+		margin-top: 200px;
+		margin-left: 50px;
+	}
+	.fsm-text-each {
+		font-size: 30px;
+	}
+	.fsm-text-header {
+		font-size: 11px;
+	}
+	.img-resp-1 {
+		height: 350px;
+	}
+	.custom-column {
+		background-color: #e3a7ff;
+		height: 700px;
 	}
 }
 
@@ -401,6 +494,27 @@ button {
 	.story-top {
 		margin: 30px;
 	}
+	.fsm-text {
+		margin-top: 200px;
+		margin-left: 30px;
+	}
+	.fsm-text-each {
+		font-size: 17px;
+	}
+	.fsm-text-header {
+		font-size: 8px;
+	}
+	.img-resp-1 {
+		height: 200px;
+	}
+	.custom-column {
+		background-color: #e3a7ff;
+		height: 600px;
+	}
+	.logolink2 {
+		width: 150px;
+		height: 106.911px;
+	}
 }
 
 @media only screen and (max-width: 400px) {
@@ -429,6 +543,17 @@ button {
 		font-size: 22px;
 		margin-top: -15px;
 		margin-bottom: 300px;
+	}
+	.logolink2 {
+		margin-left: 50px;
+		margin-right: 0px;
+		width: 100px;
+		height: 71.274px;
+	}
+
+	.custom-column {
+		background-color: #e3a7ff;
+		height: 450px;
 	}
 }
 

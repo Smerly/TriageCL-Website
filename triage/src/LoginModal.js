@@ -19,7 +19,7 @@ class LoginModal extends Component {
 			<div className="nav-link">
 				<button
 					href="#"
-					className="nav-link mx-3 mr-5"
+					className="nav-link mr-5"
 					style={{
 						borderRadius: 100,
 						fontSize: '1vw',
@@ -35,7 +35,7 @@ class LoginModal extends Component {
 					<p
 						className="triage titlecustom2"
 						style={{
-							fontSize: '2vw',
+							fontSize: 30,
 						}}
 					>
 						Login
