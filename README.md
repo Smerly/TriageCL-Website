@@ -13,9 +13,9 @@ You can add the items in "Merch" into the cart, which you can view in the Navbar
 
 ## How to run
 
-### 1. Run with Github pages
+### 1. Live Deployed
 
-You can run Triage-CL-Website with the github-pages link [here](https://smerly.github.io/TriageCL-Website/)
+You can see the Triage-CL-Website demo with the link [here](https://ernitar.me/TriageCL-Website/)
 
 ### 2. Run on your local machine
 
@@ -30,7 +30,7 @@ Step 2: Navigate to the project directory
 Step 3: Install project dependencies
 
 ```bash
-    npm install
+npm install
 ```
 
 Step 4: Start the project with Npm or Yarn
@@ -38,11 +38,11 @@ Step 4: Start the project with Npm or Yarn
 If yarn:
 
 ```bash
-    yarn start
+yarn start
 ```
 
 If npm:
 
 ```bash
-    npm start
+npm start
 ```
